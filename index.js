@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const HF_TOKEN = process.env.HF_TOKEN;
+const HF_TOKEN = ${{ secrets.HF_TOKEN }}
 const SPACE_ID = process.env.SPACE_ID;
 
 let grClient;
